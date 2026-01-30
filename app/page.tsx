@@ -6,7 +6,7 @@ export default function ChatPage() {
   const [input, setInput] = useState('');
 
   const send = async () => {
-    const res = await fetch('/api/chat/', {
+    const res = await fetch('/api/chat', {
       method: 'POST',
       body: JSON.stringify({ message: input, session_id: 'user_123' })
     });
