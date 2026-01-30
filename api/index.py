@@ -22,7 +22,7 @@ async def chat(request: Request):
     )
     
     # 2. Get LLM Response
-    llm = ChatOpenAI(model="gpt-4o")
+    llm = ChatOpenAI(model="gpt-5-nano")
     # LangChain automatically injects history if using RunnableWithMessageHistory
     # For a simple version:
     history.add_user_message(user_input)
