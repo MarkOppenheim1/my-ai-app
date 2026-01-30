@@ -31,6 +31,6 @@ async def chat(request: Request):
 
     return {"response": ai_msg.content}
 
-@app.get("/")
+@app.get("/api/status")
 def home():
     return {"status": "API is running"}
