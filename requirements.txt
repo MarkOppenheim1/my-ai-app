@@ -1,0 +1,5 @@
+fastapi
+uvicorn
+langchain-postgres
+langchain-openai
+psycopg[binary,pool]
