@@ -33,4 +33,4 @@ async def chat(request: Request):
 
 @app.get("/api/status")
 def home():
-    return {"status": "API is running"}
+    return {"status": "API is running1"}
