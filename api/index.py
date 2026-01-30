@@ -30,3 +30,7 @@ async def chat(request: Request):
     history.add_ai_message(ai_msg.content)
 
     return {"response": ai_msg.content}
+
+@app.get("/")
+def home():
+    return {"status": "API is running"}
