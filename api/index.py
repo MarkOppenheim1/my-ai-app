@@ -9,7 +9,7 @@ app = FastAPI()
 # Format Vercel's DB URL for SQLAlchemy/LangChain compatibility
 DB_URL = os.environ.get("POSTGRES_URL").replace("postgres://", "postgresql://")
 
-@app.post("/api/chat")
+@app.post("/chat")
 async def chat(request: Request):
     data = await request.json()
     session_id = data.get("session_id", "default-session")
